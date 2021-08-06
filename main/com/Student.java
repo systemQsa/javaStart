@@ -67,22 +67,24 @@ public class Student {
     }
 
     public static void listOfStudentsFaculty(Student[] persons,String faculty){
-        for (int i=0;i<persons.length;i++){
-            if(faculty.equals(persons[i].faculty)){
-                System.out.println(persons[i].name + " " + persons[i].surname + " " + persons[i].patronymic);
+        for (Student student:persons) {
+            if (faculty.equals(student.faculty)){
+                System.out.println(student.toString());
             }
         }
     }
 
-    public static void listOfStudentsAllFaculties(Student[]person,String faculty){
+    public static void listOfStudentsAllFaculties(Student[]students,String faculty){
         System.out.println(faculty);
-        for (int i=0;i<person.length;i++){
-            if(faculty.equals(person[i].faculty)){
-                System.out.println(person[i].name + " " + person[i].surname + " " + person[i].patronymic);
+
+        for (int i=0;i<students.length;i++){
+            if(faculty.equals(students[i].faculty)){
+                System.out.println(students[i].toString());
             }
         }
-    }
 
+
+    }
     public static void studentsBornAfterYear(Student[] people,int year){
         System.out.println("Born after " + year);
         for (int i=0;i<people.length;i++){
@@ -101,4 +103,19 @@ public class Student {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", dateBirth=" + dateBirth +
+                ", address='" + address + '\'' +
+                ", telephone=" + telephone +
+                ", faculty='" + faculty + '\'' +
+                ", course='" + course + '\'' +
+                ", group='" + group + '\'' +
+                '}';
+    }
 }

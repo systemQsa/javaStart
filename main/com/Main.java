@@ -1,17 +1,16 @@
 package com;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-/*
+       /*
         Scanner scanner = new Scanner(System.in);
         int[] intArray = new int[5];
         for (int i = 0; i < intArray.length; i++) {
             intArray[i] = scanner.nextInt();
         }
-      */
+        */
         //System.out.println(Arrays.toString(intArray));
 
         //task 1
@@ -20,7 +19,6 @@ public class Main {
         //Algo.allOddNumbers(intArray);
 
         //task 2
-
         //Algo.findMaxValue(intArray);
         //Algo.findMinValue(intArray);
 
@@ -41,21 +39,6 @@ public class Main {
         //task 7
         //Algo.palindrome(intArray);
 
-        //not pay attention
-        /*
-        int num = 123;
-        int count = 0;
-        int temp;
-        while(num!=0){
-            if(num!=0){
-                count++;
-            }
-            //num%=10;
-            temp = num%10;
-            num/=10;
-        }
-        System.out.println(count);
-         */
 
         //task 8
         //Algo.shortestNumber(intArray);
@@ -67,7 +50,7 @@ public class Main {
 
 
         //task Student
-        /*
+
         Scanner in = new Scanner(System.in);
 
         Student student1 = new Student("Alex","Patison","Batkovich",1990);
@@ -91,7 +74,7 @@ public class Main {
             //data[i].setGroup(in.nextLine());
         }
 
-        */
+
 
         //list of students one faculty
         //Student.listOfStudentsFaculty(data,"bio");
@@ -107,6 +90,8 @@ public class Main {
                 }
         }
         */
+
+
 
 
         //task students born after year
