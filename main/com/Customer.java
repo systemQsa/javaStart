@@ -38,6 +38,18 @@ public class Customer {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", cardNumber=" + cardNumber +
+                ", bankAccountNumber=" + bankAccountNumber +
+                '}';
+    }
+
     public static void customersByAlphabet(Customer[] customers){
         String temp;
         for (int i=0;i<customers.length;i++){
@@ -49,8 +61,8 @@ public class Customer {
                 }
             }
         }
-        for (int i=0;i<customers.length;i++){
-            System.out.println(customers[i].surname);
+        for (Customer customer:customers) {
+            System.out.println(customer.toString());
         }
 
     }
@@ -60,10 +72,11 @@ public class Customer {
             Integer from = (Integer)intervalFrom;
             Integer to = (Integer)intervalTo;
             if(customer.cardNumber>=from && customer.cardNumber<=to){
-                System.out.println(customer.name);
+                System.out.println(customer.toString());
             }
         }
     }
+
 
 }
 
